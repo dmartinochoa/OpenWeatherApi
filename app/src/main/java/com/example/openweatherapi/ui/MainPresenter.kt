@@ -26,12 +26,7 @@ class MainPresenter(private val view: View) {
             } catch (e: NetworkErrorException) {
                 view.showError(e.message!!)
             }
-
         }
-    }
-
-    fun onRefresh() {
-        init()
     }
 
     interface View {
